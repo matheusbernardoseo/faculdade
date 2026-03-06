@@ -1,86 +1,131 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
   color: #222;
 }
 
 header {
-  background-color: #111;
-  padding: 30px;
+  background-color: #1f1f1f;
+  padding: 30px 20px;
   text-align: center;
 }
 
 #titulo-principal {
-  background-color: #e63946;
+  background-color: #d62828;
   color: white;
   text-align: center;
   font-weight: bold;
   padding: 15px;
-  border-radius: 8px;
   margin: 0 auto 15px auto;
-  max-width: 600px;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+.texto-descricao {
+  color: #dddddd;
+  font-size: 18px;
+  margin: 0;
+}
+
+.bloco {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .subtitulo {
   font-size: 28px;
   font-weight: bold;
-  color: #1d1d1d;
-  margin-bottom: 10px;
+  color: #222222;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .texto {
   font-size: 16px;
   line-height: 1.7;
-  color: #555;
+  color: #5a5a5a;
 }
 
-.texto-descricao {
-  color: #ddd;
-  font-size: 18px;
+.imagem-bloco {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin-top: 15px;
+  border-radius: 8px;
 }
 
-.bloco {
-  background-color: white;
-  border: 1px solid #ddd;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.card-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.cards {
   margin-top: 20px;
 }
 
 .card {
   background-color: #fafafa;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
   padding: 15px;
-  width: 300px;
-  flex: 1;
+  margin-bottom: 20px;
 }
 
 .card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
 footer {
-  background-color: #111;
+  background-color: #1f1f1f;
   text-align: center;
   padding: 20px;
-  margin-top: 30px;
 }
 
 .texto-rodape {
   color: white;
   font-size: 14px;
+  margin: 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 375px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  #titulo-principal {
+    font-size: 24px;
+    padding: 12px;
+  }
+
+  .texto-descricao {
+    font-size: 15px;
+  }
+
+  .bloco {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .subtitulo {
+    font-size: 22px;
+  }
+
+  .texto {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .imagem-bloco {
+    margin-top: 12px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .texto-rodape {
+    font-size: 13px;
+  }
 }
