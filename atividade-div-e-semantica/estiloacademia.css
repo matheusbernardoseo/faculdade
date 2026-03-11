@@ -1,0 +1,284 @@
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: #f8f6f6; /* Cor de fundo clara */
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* --- Cabeçalho --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f8f6f6;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.botao-matricula {
+    background-color: #ec5b13;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.botao-matricula:hover {
+    background-color: #d14d0f;
+}
+
+/* --- Seção Principal --- */
+.principal {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.caixa-titulo {
+    background-color: #ec5b13;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.caixa-titulo h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.descricao-principal {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    font-size: 18px;
+    color: #4b4542;
+}
+
+.imagem-principal img {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #fdece4;
+}
+
+/* --- Seção Sobre Nós --- */
+.sobre-nos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 50px;
+    background-color: #fdfaf9;
+}
+
+.imagem-sobre img {
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.texto-sobre {
+    max-width: 500px;
+}
+
+.texto-sobre h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #221610;
+}
+
+.texto-sobre p {
+    margin-bottom: 15px;
+    color: #4b4542;
+    font-size: 16px;
+}
+
+/* --- Seção Serviços --- */
+.servicos {
+    text-align: center;
+    padding: 80px 50px;
+}
+
+.servicos h2 {
+    font-size: 30px;
+    color: #221610;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #4b4542;
+    margin-bottom: 50px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #221610;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* --- Seção Galeria --- */
+.galeria {
+    background-color: #1a1f24; /* Fundo escuro */
+    color: white;
+    text-align: center;
+    padding: 80px 50px;
+}
+
+.galeria h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-galeria {
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+.container-fotos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-fotos img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* --- Seção Contato --- */
+.contato {
+    padding: 80px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-contato {
+    display: flex;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #fdece4;
+    gap: 50px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.info-contato {
+    flex: 1;
+}
+
+.info-contato h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #221610;
+}
+
+.info-contato p {
+    color: #4b4542;
+    margin-bottom: 30px;
+}
+
+.info-contato ul {
+    list-style: none;
+}
+
+.info-contato li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: #4b4542;
+}
+
+.imagem-contato {
+    flex: 1;
+}
+
+.imagem-contato img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* --- Rodapé --- */
+footer {
+    background-color: #1a1f24;
+    color: #888;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #2a3038;
+}
+
+.logo-rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.texto-logo-rodape {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.links-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links-sociais a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links-sociais a:hover {
+    color: #ec5b13;
+}
