@@ -1,0 +1,339 @@
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITLIFE | Pilate, Aulas e Benefícios</title>
+    
+    <!-- Importando fontes do Google Fonts para deixar o texto mais bonito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    
+
+    <style>
+        /* 
+           RESET BÁSICO
+            */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #f8f6f6; 
+            color: #333333;
+            font-size: 16px;
+        }
+
+        /*            CABEÇALHO
+            */
+        .cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: #f8f6f6;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #ec5b13;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        
+        
+        .btn-primario {
+            background-color: #ec5b13;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        /* 
+           SEÇÃO PRINCIPAL
+            */
+        .secao-hero {
+            display: flex;
+            flex-direction: column; /* Empilhado no celular */
+            gap: 20px;
+            padding: 20px 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .div-imagem {
+            flex: 1;
+            border-radius: 16px;
+            overflow: hidden;
+            /* Definindo uma altura mínima para as imagens não sumirem */
+            min-height: 300px; 
+        }
+
+        .div-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Faz a imagem preencher o espaço sem amassar */
+            display: block;
+        }
+
+        .div-texto {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .div-texto h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .div-texto h1 span {
+            color: #ec5b13; /* Palavra Pilates em laranja */
+        }
+
+        .div-texto p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .botoes-hero {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-secundario {
+            background-color: transparent;
+            color: #333;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #e0e0e0;
+            text-align: center;
+        }
+
+        /*            SEÇÃO DE BENEFÍCIOS (CARDS)
+            */
+        .secao-beneficios {
+            display: flex;
+            flex-direction: column; /* Empilhado no celular */
+            gap: 20px;
+            padding: 40px 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .cartao {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            flex: 1;
+        }
+
+        .cartao .icone {
+            color: #ec5b13;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .cartao h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .cartao p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+    /* --- Rodapé --- */
+footer {
+    background-color: #1a1f24;
+    color: #888;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #2a3038;
+}
+
+.logo-rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.texto-logo-rodape {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.links-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links-sociais a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links-sociais a:hover {
+    color: #ec5b13;
+}    
+        /*            MEDIA QUERIES (RESPONSIVIDADE)
+            */
+
+        /* Para telas maiores que 768px (Tablets e Desktops) */
+        @media (min-width: 768px) {
+            
+            .secao-hero {
+                flex-direction: row; /* Coloca as 3 divs lado a lado */
+                align-items: stretch; /* Estica para terem a mesma altura */
+                height: 600px; /* Altura fixa para o desktop ficar bonito */
+            }
+
+            .div-texto {
+                text-align: left; /* Alinha o texto à esquerda */
+                padding: 0 40px;
+            }
+
+            .div-texto h1 {
+                font-size: 3.5rem; /* Aumenta o título no desktop */
+            }
+
+            .botoes-hero {
+                flex-direction: row; /* Botões lado a lado */
+            }
+
+            .secao-beneficios {
+                flex-direction: row; /* Cards lado a lado */
+            }
+        }
+
+        /* Telas pequenas (390px) */
+        @media (max-width: 390px) {
+            .cabecalho {
+                padding: 15px 20px;
+            }
+            
+            .logo span.texto-logo {
+                font-size: 1.2rem; /* Diminui um pouco a logo */
+            }
+
+            .btn-primario {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+
+            .div-texto h1 {
+                font-size: 2.2rem; /* Ajusta o título para não quebrar */
+            }
+
+            .div-texto p {
+                font-size: 1rem;
+            }
+
+            .div-imagem {
+                min-height: 250px; /* Reduz a altura da imagem no celular */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="logo">
+            <span class="texto-logo">FITLIFE</span>
+        </div>
+                <a href="#" class="btn-primario">Agendar</a>
+    </header>
+
+    <main>      
+        <section class="secao-hero">
+            <!-- Div 1: Imagem 1 -->
+            <div class="div-imagem">
+                <img src="https://www.biosete.com.br/site/wp-content/uploads/2020/02/Post-Blog_PilatesFuncional.png">
+            </div>
+
+            <!-- Div 2: Texto -->
+            <div class="div-texto">
+                <h1>Aulas de<br><span>Pilates</span></h1>
+                <p>O Pilates é um método completo que integra corpo e mente. Nossas aulas focam na melhora da postura, aumento da flexibilidade e fortalecimento do core. Proporcionamos maior consciência corporal e bem-estar geral para praticantes de todos os níveis, ajudando a reduzir o estresse e as tensões do dia a dia.</p>
+                <div class="botoes-hero">
+                    <a href="#" class="btn-primario">Começar Agora</a>
+                    <a href="#" class="btn-secundario">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- Div 3: Imagem 2 -->
+            <div class="div-imagem">
+                <img src="https://www.estadao.com.br/resizer/v2/66FLHLCBNZASHOHZ5337LMF2KE.jpeg?quality=80&auth=54fa76d4c50f966fca4a0206293ea187039954c7f098b496994d480599298c28&width=1200" alt="Equipamento de Pilates em estúdio claro">
+            </div>
+        </section>
+
+        <!-- Seção de Benefícios (Cards) -->
+        <section class="secao-beneficios">
+            <div class="cartao">                
+                <h3>Flexibilidade</h3>
+                <p>Aumente sua amplitude de movimento com exercícios controlados e fluidos.</p>
+            </div>
+            <div class="cartao">                                
+		<h3>Força Core</h3>
+                <p>Fortaleça a musculatura profunda do abdômen e estabilize sua coluna.</p>
+            </div>
+            <div class="cartao">
+                <h3>Foco Mental</h3>
+                <p>Conecte sua respiração com o movimento para uma mente mais calma e presente.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="logo-rodape">
+            <span class="texto-logo-rodape">FITLIFE</span>
+        </div>
+        <p>&copy; 2026 Academia FitLife. Todos os direitos reservados.</p>
+        <div class="links-sociais">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+        </div>
+    </footer>
+
+</body>
+</html>
